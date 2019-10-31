@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<h1>What is this? Todos for cats?!</h1>
+<h1>Wiki Summary</h1>
+<h3>What are you curious about?</h3>
+<p>Enter something like 'cat' or 'artificial intelligence'!</p>
 {% endblock %}
 
 {% block body %}
 
 <form actions="/" method="POST">
-    <input type="text" name="content" id="content" value="wikipedia article">
-    <input type="submit" value="Submit">
+    <input type="text" name="content" id="content" value="cats">
+    <input type="submit" value="Summarize">
 </form>
 
 {% endblock %}
